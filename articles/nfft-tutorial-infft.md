@@ -3,7 +3,7 @@ title: "NFFT逆変換"
 emoji: "🕌"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["c","cpp","fft", "nfft"]
-published: false
+published: true
 ---
 
 # NFFTとは，
