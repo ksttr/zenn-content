@@ -2,7 +2,7 @@
 title: "共役勾配法"
 emoji: "⛳"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
+topics: ["数学", "cpp"]
 published: false
 ---
 
