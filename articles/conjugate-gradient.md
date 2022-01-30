@@ -451,7 +451,7 @@ done
 
 ## C++での実装
 
-```c++:cg.h
+```cpp:cg.h
    template <typename T>
     vector<T> conjugate_gradient(const matrix<T>& A, const vector<T> &b, const vector<T> &initial_guess, const T &precision)
     {

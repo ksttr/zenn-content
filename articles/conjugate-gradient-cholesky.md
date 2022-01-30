@@ -3,7 +3,7 @@ title: "不完全Cholesky分解前処理付き共役勾配法"
 emoji: "🌊"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["数学", "cpp"]
-published: false
+published: true
 ---
 
 # 線型連立方程式を解く
@@ -449,7 +449,7 @@ $$
 
 以下は，前進代入と後退代入の実装である．
 
-```c++:sub.h
+```cpp:sub.h
 template <typename T>
 vector<T> forward_substitution(const matrix<T> &A, const vector<T> &b)
 {
@@ -489,7 +489,7 @@ vector<T> back_substitution(const matrix<T> &A, const vector<T> &b)
 
 以下は，不完全Cholesky分解の実装である．
 
-```c++:ic.h
+```cpp:ic.h
 template <typename T>
 matrix<T> incomplete_cholesky_factorization(const matrix<T> &A, double precision)
 {
@@ -527,7 +527,7 @@ matrix<T> incomplete_cholesky_factorization(const matrix<T> &A, double precision
 
 以下は，不完全Cholesky分解前処理つき共役勾配法の実装である．
 
-```c++:iccg.h
+```cpp:iccg.h
 template <typename T>
 vector<T> incomplete_cholesky_factorization_conjugate_gradient(const matrix<T>& A, const vector<T>& b, const vector<T> &initial_guess, const T &precision)
 {
