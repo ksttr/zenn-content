@@ -224,12 +224,12 @@ $$
 
 と表せる．
 
-## $\boldsymbol{p}_j$ を求める
+### $\boldsymbol{p}_j$ を求める
 
 次に，探索方向を表す $\boldsymbol{p}_j$ を求めよう．
 
 
-### $A$ 共役なベクトルの組 $\{\boldsymbol{p}_j\}$
+#### $A$ 共役なベクトルの組 $\{\boldsymbol{p}_j\}$
 
 これは，$A$ 共役であるベクトルの組 $\boldsymbol{p}_0, \dots, \boldsymbol{p}_{N-1}$ が選ばれる．
 
@@ -255,7 +255,7 @@ $$
 
 よって，このように$\alpha_j, \boldsymbol{p}_j$ を選んでおくと，最悪でも，$N$ 回で解に辿り着くことができる．
 
-### $\boldsymbol{p}_j$ の具体的な構成方法
+#### $\boldsymbol{p}_j$ の具体的な構成方法
 
 では， $\boldsymbol{p}_j$ は具体的にはどのように選べば良いでしょうか．
 
