@@ -160,10 +160,15 @@ $$
 
 Rust で実装する。固有値問題を解く部分は、線形代数ライブラリ[nalgebra](https://nalgebra.org/)を使用する。
 
+（2022/10/12 追記）
+nalgebra ライブラリの `SymmetricEigen`構造体によって固有値と固有ベクトルを求めると，自由度 `N` が大きいときに誤差が大きくなるようだ．
+nalgebra は`nalgebra-lapack`クレートで，LAPACK を用いた実装も提供している．今回はこちらを使ったほうが良さそうである．
+
 まずは，任意の直交多項式のゼロ点を計算する trait `Zeros` を実装する．
 
 ```rust
-use nalgebra::{DMatrix, SymmetricEigen};
+use nalgebra::DMatrix;
+use nalgebra_lapack::SymmetricEigen;
 
 trait Zeros {
     // 直交多項式の自由度 N を求める
